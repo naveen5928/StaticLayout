@@ -184,7 +184,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 3vh;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -260,7 +260,8 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 5rem;
+  padding: 1rem 3rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -573,6 +574,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 1rem;
+  margin-bottom: -1px;
 }
 .nav__list {
   margin: 0;
@@ -638,9 +640,13 @@ a {
   .hero__content {
     align-self: center;
     text-align: left;
+    margin: 4rem 0;
   }
 }
 /* Domain block */
+.block__domain {
+  padding-top: 0;
+}
 .block__domain .input-group {
   border: 0;
   box-shadow: 0 0 30px 20px #e6ebee;
@@ -648,6 +654,7 @@ a {
   max-width: 670px;
 }
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
   font-size: 2rem;
   font-weight: 600;
@@ -660,6 +667,12 @@ a {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+@media screen and (max-width: 375px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 6rem);
   }
 }
 /* feature Block */
