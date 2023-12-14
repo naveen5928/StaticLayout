@@ -644,9 +644,9 @@ a {
   }
 }
 /* Domain block */
-.block__domain {
-  padding-top: 0;
-}
+/* .block__domain {
+  /* padding-top: 0; 
+} */
 .block__domain .input-group {
   border: 0;
   box-shadow: 0 0 30px 20px #e6ebee;
@@ -674,6 +674,10 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 6rem);
   }
+}
+/* card plan */
+.block-plans {
+  padding-top: 0;
 }
 /* feature Block */
 .feature {
