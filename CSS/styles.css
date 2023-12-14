@@ -1,6 +1,8 @@
 /*  ! Declaring root color templet for web page - DON'T Delete these... */
 /* selecting color from Web Design and Intialize it */
 /* Typography for small to 1024 pixels screens */
+@import "./normalize.css";
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -718,10 +720,15 @@ a {
     max-width: 700px;
   }
 }
+/* callOut Block */
+.callout-signup {
+  transform: translateY(5rem);
+}
 
 /* Footer block */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -745,6 +752,8 @@ a {
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
 .footer__brand {
@@ -753,8 +762,7 @@ a {
 }
 
 .footer__brand img {
-  /* TODO: Consider refactoring this and applying it to 
-  all images. */
+  /* TODO: Consider refactoring this and applying it to all images. */
   width: 100%;
   max-width: 230px;
 }
