@@ -601,7 +601,7 @@ a {
 .nav__toggler {
   cursor: pointer;
   opacity: 0.5;
-  transform: box-shadow 0.15s;
+  transition: box-shadow 0.15s;
 }
 .nav.collapsible--expanded .nav__toggler {
   border-radius: 5px;
