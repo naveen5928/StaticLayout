@@ -649,7 +649,10 @@ a {
     padding-top: 0;
   }
 }
-
+/* Domain Block */
+.block__domain {
+  padding-bottom: 0;
+}
 .block__domain .input-group {
   border: 0;
   box-shadow: 0 0 30px 20px #e6ebee;
@@ -679,7 +682,9 @@ a {
   }
 }
 /* Plans Block */
-
+.block-plans {
+  padding-top: 0;
+}
 .block-plans .grid {
   gap: 8rem 4rem;
 }
@@ -702,12 +707,12 @@ a {
 
 @media screen and (min-width: 1024px) {
   .feature:nth-of-type(even) .feature__content {
-    order: 2;
+    order: 1;
   }
 }
 @media screen and (max-width: 765px) {
   .feature:nth-of-type(odd) .feature__content {
-    order: 1;
+    order: 2;
   }
 }
 
